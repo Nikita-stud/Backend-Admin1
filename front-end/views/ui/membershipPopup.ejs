@@ -1,0 +1,34 @@
+<div
+  id="membershipPopup"
+  class="popup d-none position-fixed top-0 start-0 w-100 h-100 justify-content-center align-items-center"
+>
+  <form
+    id="membershipForm"
+    method="POST"
+    class="d-flex flex-column bg-white p-4 rounded shadow"
+  >
+    <div class="d-flex justify-content-end">
+      <button
+        type="button"
+        id="closeMembershipPopup"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+    </div>
+    <label id="membershipLabel" for="membershipDiscount" class="form-label"></label>
+    <div class="d-flex">
+      <input
+        type="number"
+        class="form-control"
+        id="membershipDiscount"
+        name="discount"
+        min="0"
+        placeholder="Enter new discount"
+        required
+      />
+      <button type="submit" class="btn btn-warning text-white">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "2025-10-onl-pbed1-pbnd2-ft"
+assignment: "oct25ft-ep1-ca"
+owner:
+  username: "Nikita-stud"
+  id: 123599547
+  accepted_at: "2026-09-21T10:05:17Z"
+source:
+  owner: "noroff-backend-1"
+  owner_id: 125854538
+  repo: "ep-ca-1"
+  branch: "main"

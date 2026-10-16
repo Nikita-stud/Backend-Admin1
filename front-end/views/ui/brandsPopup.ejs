@@ -1,0 +1,34 @@
+<div
+  id="brandPopup"
+  class="popup d-none position-fixed top-0 start-0 w-100 h-100 justify-content-center align-items-center"
+>
+  <form
+    id="brandForm"
+    method="POST"
+    class="d-flex flex-column bg-white p-4 rounded shadow"
+  >
+    <div class="d-flex justify-content-end">
+      <button
+        type="button"
+        id="closeBrandPopup"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+    </div>
+    <label id="brandLabel" for="brandName" class="form-label"></label>
+    <div class="d-flex">
+      <input
+        type="text"
+        class="form-control"
+        id="brandName"
+        name="name"
+        placeholder="Enter new name"
+        required
+      />
+      <button type="submit" class="btn btn-warning text-white">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+    </div>
+  </form>
+</div>
+;

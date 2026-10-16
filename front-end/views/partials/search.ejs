@@ -1,0 +1,24 @@
+<form action="/admin/products/search" method="POST" class="d-flex gap-3 mb-4">
+  <input class="form-control" name="name" type="text" placeholder="Product name" />
+
+  <select class="form-select" name="category">
+    <option value="">None</option>
+
+      <% for (const category of categories) { %>
+        <option value="<%= category.name %>"><%= category.name %></option>
+      <% } %>
+  </select>
+
+  <select class="form-select" name="brand">
+    <option value="">None</option>
+      <% for (const brand of brands) { %>
+        <option value="<%= brand.name %>"><%= brand.name %></option>
+      <% } %>
+  </select>
+  <button type="submit" class="btn btn-secondary text-white text-nowrap">
+    <i class="fa-solid fa-magnifying-glass"></i> Search
+  </button>
+  <a href="/admin/products" class="btn btn-warning text-white text-nowrap">
+    <i class="fa-solid fa-x"></i> Clear
+  </a>
+</form>

@@ -1,0 +1,27 @@
+{
+  "name": "front-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "concurrently \"npm start --prefix ../back-end\" \"npm run watch\" \"npm run sync\"",
+    "watch": "nodemon --ignore public/ --ext js,json ./bin/www",
+    "sync": "browser-sync start --proxy localhost:3001 --port 3002 --files \"views/**/*.ejs, public/**/*, app.js, routes/**/*.js, helpers/**/*.js, middleware/**/*.js\" --reload-delay 1000 --no-notify"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^18.0.5",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "http-errors": "~1.6.3",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14"
+  }
+}

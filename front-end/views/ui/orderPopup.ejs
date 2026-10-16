@@ -1,0 +1,30 @@
+<div
+  id="orderPopup"
+  class="popup d-none position-fixed top-0 start-0 w-100 h-100 justify-content-center align-items-center"
+>
+  <form
+    id="orderForm"
+    method="POST"
+    class="d-flex flex-column bg-white p-4 rounded shadow"
+  >
+    <div class="d-flex justify-content-end">
+      <button
+        type="button"
+        id="closeOrderPopup"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+    </div>
+    <label id="orderLabel" for="orderStatus" class="form-label"></label>
+    <div class="d-flex">
+      <select class="form-select" id="orderStatus" name="status" required>
+        <option value="In Progress">In Progress</option>
+        <option value="Ordered">Ordered</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button type="submit" class="btn btn-warning text-white">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+    </div>
+  </form>
+</div>
